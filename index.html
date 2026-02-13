@@ -1,105 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>TriVolt Electrics | Électricité à Dakar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TriVolt Electrics - Installation électrique, dépannage, solaire et mise aux normes à Dakar et Lac Rose.">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TriVolt Electrics - Entreprise d'électricité à Dakar, Sénégal. Installation, dépannage, énergies renouvelables.">
+  <meta name="keywords" content="électricien Dakar, installation électrique, dépannage, Sénégal, énergie solaire">
+  <meta name="author" content="TriVolt Electrics">
+  <title>TriVolt Electrics - Électricien professionnel à Dakar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
 </head>
-
 <body>
-
-<header>
+  <!-- Header -->
+  <header>
     <div class="container header-container">
-        
-        <!-- LOGO IMAGE -->
-        <div class="logo">
-            <img src="images/logo-trivolt.png" alt="TriVolt Electrics Logo">
-            <div>
-                <h3>TriVolt Electrics</h3>
-                <p>Solutions Électriques Professionnelles</p>
-            </div>
+      <div class="logo">
+        <img src="logo.svg" alt="TriVolt Electrics" width="50" height="30" style="margin-right: 10px;">
+        <div class="logo-text">
+          <h3>TriVolt Electrics</h3>
+          <p>Électricité professionnelle à Dakar</p>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="mainMenu">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#equipe">Notre équipe</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</header>
+  </header>
 
-<section class="hero" id="accueil">
+  <!-- Hero -->
+  <section class="hero" id="accueil">
     <div class="container">
-        <h1>Expert en Installations Électriques à Dakar</h1>
-        <p>Installation, maintenance, énergie solaire et mise aux normes. Sécurité et performance garanties.</p>
+      <h1>TriVolt Electrics - Expert en installations électriques</h1>
+      <p>Basée à Lac-Rose (BP-20 000), notre entreprise offre des services professionnels pour tous vos projets. Qualité, sécurité et fiabilité garanties.</p>
+      <div class="hero-btns">
         <a href="#contact" class="btn">Demander un devis</a>
+        <a href="#services" class="btn btn-secondary">Nos services</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="apropos" class="about">
+  <!-- About -->
+  <section class="about" id="apropos">
     <div class="container">
-        <h2>À propos</h2>
-        <p>
-            Basée à Lac Rose, TriVolt Electrics accompagne les particuliers et entreprises
-            dans leurs projets électriques avec professionnalisme et rigueur technique.
-        </p>
-    </div>
-</section>
-
-<section id="services" class="services">
-    <div class="container">
-        <h2>Nos Services</h2>
-
-        <div class="services-grid">
-            <div class="card">
-                <i class="fas fa-home"></i>
-                <h3>Installations Résidentielles</h3>
-                <p>Mise aux normes et installation complète.</p>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-industry"></i>
-                <h3>Électricité Industrielle</h3>
-                <p>Distribution, tableaux et maintenance.</p>
-            </div>
-
-            <div class="card">
-                <i class="fas fa-solar-panel"></i>
-                <h3>Énergie Solaire</h3>
-                <p>Solutions photovoltaïques adaptées.</p>
-            </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h2>À propos de TriVolt Electrics</h2>
+          <p>Fondée au Sénégal, TriVolt Electrics est spécialisée dans les installations électriques pour particuliers et entreprises dans la région de Dakar et du Lac-Rose.</p>
+          <p>Notre mission : fournir des solutions électriques sûres, efficaces et conformes aux normes, avec un service client exceptionnel.</p>
+          <p>Nous utilisons des matériaux de qualité et appliquons les meilleures pratiques pour la durabilité et la sécurité de vos installations.</p>
+          <a href="#contact" class="btn">Nous contacter</a>
         </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Technicien électricien au travail" loading="lazy">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact" class="contact">
+  <!-- Team -->
+  <section class="team" id="equipe">
     <div class="container">
-        <h2>Contact</h2>
-        <p><strong>Téléphone :</strong> +221 76 355 46 05</p>
-        <p><strong>Email :</strong> amadou.soow@proton.me</p>
-        <p><strong>Adresse :</strong> Lac Rose, Dakar, Sénégal</p>
+      <h2>Notre Équipe d'Experts</h2>
+      <div class="team-members">
+        <div class="team-member">
+          <div class="member-img"><i class="fas fa-user-tie"></i></div>
+          <div class="member-info">
+            <h3>Amadou SOW</h3>
+            <span class="member-role">CEO & Ingénieur Électrotechnicien</span>
+            <p>Fondateur, plus de 6 ans d'expérience. Supervise tous les projets et garantit la conformité aux normes.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-img"><i class="fas fa-user-cog"></i></div>
+          <div class="member-info">
+            <h3>Alassane SOW</h3>
+            <span class="member-role">Électrotechnicien</span>
+            <p>Spécialiste des installations complexes, maîtrise les systèmes électriques résidentiels et industriels.</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <div class="member-img"><i class="fas fa-tools"></i></div>
+          <div class="member-info">
+            <h3>Pape Moussa POGNE</h3>
+            <span class="member-role">Installateur Électrique</span>
+            <p>Expert en câblages, installations précises et durables. Travaux propres et sécurisés.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer>
+  <!-- Services -->
+  <section class="services" id="services">
     <div class="container">
-        <p>© 2026 TriVolt Electrics - Tous droits réservés.</p>
+      <h2>Nos Services</h2>
+      <div class="services-grid">
+        <div class="service-card"><i class="fas fa-home service-icon"></i><h3>Installations Résidentielles</h3><p>Installation complète ou rénovation, mise aux normes.</p></div>
+        <div class="service-card"><i class="fas fa-building service-icon"></i><h3>Électricité Industrielle</h3><p>Solutions pour entreprises, bureaux, magasins.</p></div>
+        <div class="service-card"><i class="fas fa-tools service-icon"></i><h3>Dépannage & Réparation</h3><p>Intervention rapide pour pannes et courts-circuits.</p></div>
+        <div class="service-card"><i class="fas fa-solar-panel service-icon"></i><h3>Énergies Renouvelables</h3><p>Installation de systèmes solaires photovoltaïques.</p></div>
+        <div class="service-card"><i class="fas fa-lightbulb service-icon"></i><h3>Éclairage & Domotique</h3><p>Conception d'éclairage et solutions connectées.</p></div>
+        <div class="service-card"><i class="fas fa-clipboard-check service-icon"></i><h3>Diagnostic & Mise aux Normes</h3><p>Vérification complète et mise en conformité.</p></div>
+      </div>
     </div>
-</footer>
+  </section>
 
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contactez-nous</h2>
+          <p>Pour toute demande de devis ou intervention, notre équipe vous répondra rapidement.</p>
+          <div class="contact-details">
+            <div class="contact-item"><i class="fas fa-map-marker-alt contact-icon"></i><div><h4>Adresse</h4><p>Lac-Rose, BP-20 000, Dakar, Sénégal</p></div></div>
+            <div class="contact-item"><i class="fas fa-phone contact-icon"></i><div><h4>Téléphone</h4><p>+221 76 355 46 05<br>+221 78 165 63 00</p></div></div>
+            <div class="contact-item"><i class="fas fa-envelope contact-icon"></i><div><h4>Email</h4><p>amadou.soow@proton.me</p></div></div>
+            <div class="contact-item"><i class="fas fa-clock contact-icon"></i><div><h4>Horaires</h4><p>Lun-Ven: 8h-18h<br>Samedi: 9h-13h</p></div></div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>Demande de devis</h3>
+          <form id="contactForm" action="https://formspree.io/f/mkovnlgy" method="POST">
+            <div class="form-group"><label for="name">Nom complet *</label><input type="text" id="name" name="name" class="form-control" required></div>
+            <div class="form-group"><label for="phone">Téléphone *</label><input type="tel" id="phone" name="phone" class="form-control" required></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" class="form-control"></div>
+            <div class="form-group"><label for="service">Type de service *</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="">Sélectionnez</option>
+                <option value="residential">Installation résidentielle</option>
+                <option value="commercial">Électricité commerciale</option>
+                <option value="repair">Dépannage</option>
+                <option value="solar">Énergies renouvelables</option>
+                <option value="lighting">Éclairage & domotique</option>
+                <option value="diagnostic">Diagnostic</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+            <div class="form-group"><label for="message">Message / Description *</label><textarea id="message" name="message" class="form-control" required></textarea></div>
+            <button type="submit" class="btn" style="width:100%;">Envoyer la demande</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>TriVolt Electrics</h3>
+          <p>Votre partenaire en solutions électriques à Dakar. Professionnalisme et sécurité.</p>
+          <div style="margin-top:20px;">
+            <a href="https://wa.me/+221763554605" class="btn" style="margin-right:10px;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="tel:+221763554605" class="btn btn-secondary"><i class="fas fa-phone"></i> Appeler</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Liens rapides</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#equipe">Notre équipe</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Nos services</h4>
+          <ul>
+            <li><a href="#services">Installations résidentielles</a></li>
+            <li><a href="#services">Électricité industrielle</a></li>
+            <li><a href="#services">Dépannage</a></li>
+            <li><a href="#services">Énergies renouvelables</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 TriVolt Electrics - Lac-Rose, Dakar. Tous droits réservés.</p>
+        <p>BP-20 000 | +221 76 355 46 05 | amadou.soow@proton.me</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mainMenu = document.getElementById('mainMenu');
+      mobileBtn.addEventListener('click', function() {
+        mainMenu.classList.toggle('active');
+        const icon = mobileBtn.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+      });
+
+      // Fermer le menu après clic sur un lien
+      document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainMenu.classList.remove('active');
+          const icon = mobileBtn.querySelector('i');
+          icon.classList.add('fa-bars');
+          icon.classList.remove('fa-times');
+        });
+      });
+
+      // Gestion formulaire
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        try {
+          const response = await fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (response.ok) {
+            alert('Merci ! Votre demande a été envoyée.');
+            form.reset();
+          } else {
+            alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+          }
+        } catch {
+          alert('Problème de connexion. Vérifiez votre réseau.');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
