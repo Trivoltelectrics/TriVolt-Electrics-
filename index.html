@@ -2,917 +2,104 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>TriVolt Electrics | Électricité à Dakar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriVolt Electrics - Entreprise d'Électricité à Dakar, Sénégal</title>
+    <meta name="description" content="TriVolt Electrics - Installation électrique, dépannage, solaire et mise aux normes à Dakar et Lac Rose.">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* ===== RESET ET STYLES GÉNÉRAUX ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        :root {
-            --primary: #f4b41a;
-            --secondary: #143d59;
-            --light: #f8f9fa;
-            --dark: #212529;
-            --gray: #6c757d;
-            --success: #28a745;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: var(--dark);
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        section {
-            padding: 80px 0;
-        }
-        
-        h1, h2, h3, h4 {
-            margin-bottom: 20px;
-            color: var(--secondary);
-            font-weight: 700;
-        }
-        
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-        }
-        
-        h2 {
-            font-size: 2.2rem;
-            text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        
-        h2:after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background-color: var(--primary);
-        }
-        
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--primary);
-            color: var(--secondary);
-            border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            text-align: center;
-        }
-        
-        .btn:hover {
-            background-color: #e0a510;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .btn-secondary {
-            background-color: var(--secondary);
-            color: white;
-        }
-        
-        .btn-secondary:hover {
-            background-color: #0d2d43;
-        }
-        
-        /* ===== HEADER ET NAVIGATION ===== */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-icon {
-            color: var(--primary);
-            font-size: 2rem;
-        }
-        
-        .logo-text h3 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: var(--secondary);
-        }
-        
-        .logo-text p {
-            margin: 0;
-            font-size: 0.8rem;
-            color: var(--gray);
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-            font-size: 1rem;
-            transition: color 0.3s;
-            position: relative;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary);
-        }
-        
-        nav ul li a:after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--primary);
-            transition: width 0.3s;
-        }
-        
-        nav ul li a:hover:after {
-            width: 100%;
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--secondary);
-            cursor: pointer;
-        }
-        
-        /* ===== HERO SECTION ===== */
-        .hero {
-            background: linear-gradient(rgba(20, 61, 89, 0.85), rgba(20, 61, 89, 0.9)), url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 180px 0 120px;
-            margin-top: 80px;
-        }
-        
-        .hero h1 {
-            color: white;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .hero-btns {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        
-        /* ===== ABOUT SECTION ===== */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .about-text h2 {
-            text-align: left;
-        }
-        
-        .about-text h2:after {
-            left: 0;
-            transform: none;
-        }
-        
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* ===== TEAM SECTION ===== */
-        .team {
-            background-color: var(--light);
-        }
-        
-        .team-members {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .team-member {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
-        
-        .team-member:hover {
-            transform: translateY(-10px);
-        }
-        
-        .member-img {
-            height: 250px;
-            background-color: #e9ecef;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 5rem;
-            color: var(--secondary);
-        }
-        
-        .member-info {
-            padding: 25px;
-        }
-        
-        .member-info h3 {
-            margin-bottom: 5px;
-            color: var(--secondary);
-        }
-        
-        .member-role {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        /* ===== SERVICES SECTION ===== */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .service-card h3 {
-            margin-bottom: 15px;
-        }
-        
-        /* ===== CONTACT SECTION ===== */
-        .contact {
-            background-color: var(--light);
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-        }
-        
-        .contact-info h2 {
-            text-align: left;
-        }
-        
-        .contact-info h2:after {
-            left: 0;
-            transform: none;
-        }
-        
-        .contact-details {
-            margin-top: 30px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 25px;
-        }
-        
-        .contact-icon {
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-right: 15px;
-            margin-top: 5px;
-        }
-        
-        .contact-form {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--secondary);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: border 0.3s;
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
-        }
-        
-        /* ===== FOOTER ===== */
-        footer {
-            background-color: var(--secondary);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-logo h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-        
-        .footer-logo p {
-            color: rgba(255, 255, 255, 0.7);
-        }
-        
-        .footer-links h4, .footer-services h4 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.2rem;
-        }
-        
-        .footer-links ul, .footer-services ul {
-            list-style: none;
-        }
-        
-        .footer-links ul li, .footer-services ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links ul li a, .footer-services ul li a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links ul li a:hover, .footer-services ul li a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
-        
-        /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.4rem;
-            }
-            
-            h2 {
-                font-size: 2rem;
-            }
-            
-            .about-content, .contact-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-text h2, .contact-info h2 {
-                text-align: center;
-            }
-            
-            .about-text h2:after, .contact-info h2:after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: white;
-                flex-direction: column;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-                padding: 20px 0;
-            }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 0;
-                text-align: center;
-                padding: 15px 0;
-                border-bottom: 1px solid #f0f0f0;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero {
-                padding: 150px 0 100px;
-            }
-            
-            .hero-btns {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .hero-btns .btn {
-                width: 80%;
-                max-width: 300px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            section {
-                padding: 60px 0;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .team-members, .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <div class="logo-text">
-                    <h3>TriVolt Electrics</h3>
-                    <p>Électricité professionnelle à Dakar</p>
-                </div>
-            </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul id="mainMenu">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#equipe">Notre équipe</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="accueil">
-        <div class="container">
-            <h1>TriVolt Electrics - Expert en installations électriques</h1>
-            <p>Basée dans la région de Dakar à Lac-Rose BP-20 000, notre entreprise d'électricité offre des services professionnels pour tous vos projets résidentiels et commerciaux. Qualité, sécurité et fiabilité garanties.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn">Demander un devis</a>
-                <a href="#services" class="btn btn-secondary">Nos services</a>
+<header>
+    <div class="container header-container">
+        
+        <!-- LOGO IMAGE -->
+        <div class="logo">
+            <img src="images/logo-trivolt.png" alt="TriVolt Electrics Logo">
+            <div>
+                <h3>TriVolt Electrics</h3>
+                <p>Solutions Électriques Professionnelles</p>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="apropos">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>À propos de TriVolt Electrics</h2>
-                    <p>Fondée au Sénégal, TriVolt Electrics est une entreprise spécialisée dans les installations électriques pour particuliers et entreprises dans la région de Dakar et du Lac-Rose.</p>
-                    <p>Notre mission est de fournir des solutions électriques sûres, efficaces et conformes aux normes en vigueur, tout en garantissant un service client exceptionnel.</p>
-                    <p>Nous nous engageons à utiliser des matériaux de qualité et à appliquer les meilleures pratiques du métier pour assurer la durabilité et la sécurité de toutes nos installations.</p>
-                    <p>Notre équipe d'experts est à votre disposition pour tout projet, de la simple réparation à l'installation complète d'un système électrique.</p>
-                    <a href="#contact" class="btn">Nous contacter</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Technicien électricien au travail">
-                </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero" id="accueil">
+    <div class="container">
+        <h1>Expert en Installations Électriques à Dakar</h1>
+        <p>Installation, maintenance, énergie solaire et mise aux normes. Sécurité et performance garanties.</p>
+        <a href="#contact" class="btn">Demander un devis</a>
+    </div>
+</section>
+
+<section id="apropos" class="about">
+    <div class="container">
+        <h2>À propos</h2>
+        <p>
+            Basée à Lac Rose, TriVolt Electrics accompagne les particuliers et entreprises
+            dans leurs projets électriques avec professionnalisme et rigueur technique.
+        </p>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2>Nos Services</h2>
+
+        <div class="services-grid">
+            <div class="card">
+                <i class="fas fa-home"></i>
+                <h3>Installations Résidentielles</h3>
+                <p>Mise aux normes et installation complète.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-industry"></i>
+                <h3>Électricité Industrielle</h3>
+                <p>Distribution, tableaux et maintenance.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-solar-panel"></i>
+                <h3>Énergie Solaire</h3>
+                <p>Solutions photovoltaïques adaptées.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Team Section -->
-    <section class="team" id="equipe">
-        <div class="container">
-            <h2>Notre Équipe d'Experts</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <div class="member-img">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="member-info">
-                        <h3>Amadou SOW</h3>
-                        <span class="member-role">CEO & Ingénieur Électrotechnicien</span>
-                        <p>Fondateur et dirigeant de TriVolt Electrics, Amadou dispose de plus de 6 ans d'expérience dans le domaine de l'électricité. Il supervise tous les projets et garantit leur conformité aux normes de sécurité.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-img">
-                        <i class="fas fa-user-cog"></i>
-                    </div>
-                    <div class="member-info">
-                        <h3>Alassane SOW</h3>
-                        <span class="member-role">Électrotechnicien</span>
-                        <p>Spécialiste des installations complexes, Alassane maîtrise les systèmes électriques résidentiels et industriels. Il assure la mise en œuvre technique et la résolution des problèmes électriques.</p>
-                    </div>
-                </div>
-                
-                <div class="team-member">
-                    <div class="member-img">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <div class="member-info">
-                        <h3>Pape Moussa POGNE</h3>
-                        <span class="member-role">Installateur Électrique</span>
-                        <p>Expert en installations et câblages, Pape Moussa met en place les systèmes électriques avec précision et efficacité. Son expérience garantit des travaux propres, durables et sécurisés.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p><strong>Téléphone :</strong> +221 76 355 46 05</p>
+        <p><strong>Email :</strong> amadou.soow@proton.me</p>
+        <p><strong>Adresse :</strong> Lac Rose, Dakar, Sénégal</p>
+    </div>
+</section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Nos Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>Installations Résidentielles</h3>
-                    <p>Installation complète ou rénovation de systèmes électriques pour maisons, appartements et villas. Mise aux normes de sécurité.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>Électricité Industrielle & Commerciale</h3>
-                    <p>Solutions électriques pour entreprises, bureaux, magasins et installations industrielles. Tableaux électriques et distribution.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Dépannage & Réparation</h3>
-                    <p>Intervention rapide pour résoudre vos problèmes électriques : pannes, courts-circuits, dysfonctionnements divers.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-solar-panel"></i>
-                    </div>
-                    <h3>Énergies Renouvelables</h3>
-                    <p>Installation de systèmes solaires photovoltaïques pour l'autoconsommation et la réduction de votre facture d'électricité.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Éclairage & Domotique</h3>
-                    <p>Conception et installation de systèmes d'éclairage intérieur/extérieur et solutions domotiques pour plus de confort.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Diagnostic & Mise aux Normes</h3>
-                    <p>Vérification complète de votre installation électrique et mise en conformité avec les normes de sécurité en vigueur.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer>
+    <div class="container">
+        <p>© 2026 TriVolt Electrics - Tous droits réservés.</p>
+    </div>
+</footer>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Contactez-nous</h2>
-                    <p>Pour toute demande de devis ou intervention, n'hésitez pas à nous contacter. Notre équipe vous répondra dans les plus brefs délais.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div>
-                                <h4>Adresse</h4>
-                                <p>Lac-Rose, BP-20 000<br>Région de Dakar, Sénégal</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <p>+221 76 355 46 05 <br>+221 78 165 63 00 </p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>amadou.soow@proton.me </p>
-                                <!-- <p>contact@trivolt-electrics.sn<br>info@trivolt-electrics.sn</p> -->
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h4>Horaires d'ouverture</h4>
-                                <p>Lun - Ven: 8h00 - 18h00<br>Samedi: 9h00 - 13h00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3>Demande de devis</h3>
-                    <form id="contactForm" action="https://formspree.io/f/mkovnlgy" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Téléphone *</label>
-                            <input type="tel" id="phone" name="phone" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service">Type de service *</label>
-                            <select id="service" name="service" class="form-control" required>
-                                <option value="">Sélectionnez un service</option>
-                                <option value="residential">Installation résidentielle</option>
-                                <option value="commercial">Électricité commerciale</option>
-                                <option value="repair">Dépannage & réparation</option>
-                                <option value="solar">Énergies renouvelables</option>
-                                <option value="lighting">Éclairage & domotique</option>
-                                <option value="diagnostic">Diagnostic & mise aux normes</option>
-                                <option value="other">Autre</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message / Description des travaux *</label>
-                            <textarea id="message" name="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn" style="width: 100%;">Envoyer la demande</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>TriVolt Electrics</h3>
-                    <p>Votre partenaire en solutions électriques à Dakar et dans la région du Lac-Rose. Professionnalisme, qualité et sécurité garantis.</p>
-                    <div style="margin-top: 20px;">
-                        <a href="https://wa.me/+221763554605" class="btn" style="margin-right: 10px;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                        <a href="tel:+221763554605" class="btn btn-secondary"><i class="fas fa-phone"></i> Appeler</a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Liens rapides</h4>
-                    <ul>
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#apropos">À propos</a></li>
-                        <li><a href="#equipe">Notre équipe</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-services">
-                    <h4>Nos services</h4>
-                    <ul>
-                        <li><a href="#services">Installations résidentielles</a></li>
-                        <li><a href="#services">Électricité industrielle</a></li>
-                        <li><a href="#services">Dépannage & réparation</a></li>
-                        <li><a href="#services">Énergies renouvelables</a></li>
-                        <li><a href="#services">Diagnostic & normes</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 TriVolt Electrics - Entreprise d'électricité à Lac-Rose, Dakar, Sénégal. Tous droits réservés.</p>
-                <p>BP-20 000 | +221 76 355 46 05 | +221 78 165 63 00 | amadou.soow@proton.me </p>
-                    <!-- | contact@trivolt-electrics.sn</p> -->
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript pour le menu mobile et le formulaire
-        document.addEventListener('DOMContentLoaded', function() {
-            // Menu mobile
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mainMenu = document.getElementById('mainMenu');
-            
-            mobileMenuBtn.addEventListener('click', function() {
-                mainMenu.classList.toggle('active');
-                const icon = mobileMenuBtn.querySelector('i');
-                if (mainMenu.classList.contains('active')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
-                } else {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            });
-            
-            // Fermer le menu en cliquant sur un lien
-            const menuLinks = document.querySelectorAll('nav ul li a');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    mainMenu.classList.remove('active');
-                    const icon = mobileMenuBtn.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                });
-            });
-            
-            // Gestion du formulaire de contact
-            const contactForm = document.getElementById('contactForm');
-
-            contactForm.addEventListener('submit', async function(e) {
-                e.preventDefault();
-                
-                const formData = new FormData(this);
-                
-                try {
-                    const response = await fetch(this.action, {
-                        method: 'POST',
-                        body: formData,
-                        headers: { 'Accept': 'application/json' }
-                    });
-
-                    if (response.ok) {
-                        alert("Merci ! Votre demande a été envoyée avec succès.");
-                        contactForm.reset();
-                    } else {
-                        alert("Oups ! Il y a eu un problème lors de l'envoi.");
-                    }
-                } catch (error) {
-                    alert("Erreur de connexion au serveur.");
-                }
-            });
-            
-            // Animation au défilement
-            const observerOptions = {
-                threshold: 0.1
-            };
-            
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animated');
-                    }
-                });
-            }, observerOptions);
-            
-            // Observer les sections pour l'animation
-            document.querySelectorAll('section').forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
 </body>
 </html>
